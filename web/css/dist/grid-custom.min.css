@@ -1,0 +1,8 @@
+._custom_grid_ .col {
+    margin-bottom: 16px;
+}
+._custom_grid_ .col > div {
+    background-color: #8bc34a;
+    min-height: 32px;
+    padding: 16px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <title>{{ title }}</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+        <!-- <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' /> -->
+        <link rel="stylesheet" href="{{ asset('uimagine.design/bower_components/Ionicons/css/ionicons.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('uimagine.design/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css') }}" />
+
+        <!-- Material Icons ################################################ -->
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+        <link rel="stylesheet" href="{{ asset('css/dist/default.min.css') }}" />
+        {% block css %}{% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        <!-- <script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/main.js') }}"></script> -->
+    </body>
+</html>

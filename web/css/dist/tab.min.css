@@ -1,0 +1,24 @@
+/*$primaryColor: #4285f4 //#227bc3 */
+/*#227bc3 */
+/*$primaryColor: #69499c */
+/* GRID ##################################################################### */
+/* TYPOGRAPHY ############################################################### */
+/* NAVBAR ################################################################### */
+
+ul[tab] {
+    padding-left: 0;
+}
+
+ul[tab] li {
+    float: left;
+    list-style: none;
+    padding: $spacing;
+}
+
+ul[tab-content] {
+    padding-left: 0;
+}
+
+ul[tab-content] li {
+    list-style: none;
+}

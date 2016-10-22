@@ -1,0 +1,75 @@
+/*$primaryColor: #4285f4 //#227bc3 */
+/*#227bc3 */
+/*$primaryColor: #69499c */
+/* GRID ##################################################################### */
+/* TYPOGRAPHY ############################################################### */
+/* NAVBAR ################################################################### */
+
+[label-icon-content] {
+    float: left;
+    width: 100px;
+}
+
+[label-icon-content] label {
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 12px;
+    margin-bottom: 0;
+    width: 60px;
+}
+
+[label-icon-content] span {
+    display: block;
+    float: left;
+    font-weight: bold;
+}
+
+[label-icon-content] [icon] {
+    border-radius: 16px;
+    color: white;
+    display: block;
+    float: left;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 6px;
+    text-align: center;
+    width: 32px;
+}
+
+[label-icon-content]:nth-child(1) {
+    color: #169bd7;
+}
+
+[label-icon-content]:nth-child(1) [icon] {
+    box-shadow: inset 0 0 0 2px #169bd7;;
+    color: #169bd7;;
+}
+
+[label-icon-content]:nth-child(2) {
+    color: #8363b6;
+}
+
+[label-icon-content]:nth-child(2) [icon] {
+    box-shadow: inset 0 0 0 2px #8363b6;;
+    color: #8363b6;;
+}
+
+[label-icon-content]:nth-child(3) {
+    color: #ff6384;
+}
+
+[label-icon-content]:nth-child(3) [icon] {
+    box-shadow: inset 0 0 0 2px #ff6384;;
+    color: #ff6384;;
+}
+
+[label-icon-content]:nth-child(4) {
+    color: #FF8E0F;
+}
+
+[label-icon-content]:nth-child(4) [icon] {
+    box-shadow: inset 0 0 0 2px #FF8E0F;;
+    color: #FF8E0F;;
+}

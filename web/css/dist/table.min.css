@@ -1,0 +1,47 @@
+/*$primaryColor: #4285f4 //#227bc3 */
+/*#227bc3 */
+/*$primaryColor: #69499c */
+/* GRID ##################################################################### */
+/* TYPOGRAPHY ############################################################### */
+/* NAVBAR ################################################################### */
+
+[tb] {
+    /*@extend font_default */
+    border-collapse: collapse;
+}
+
+[tb] tr:hover td {
+    background-color: #169bd7;
+    color: white;
+    cursor: pointer;
+    border-color: rgb(23, 140, 194);
+}
+
+[tb] th {
+    color: #69499c;
+}
+
+[tb] th, [tb] td {
+    border: 1px solid rgb(230, 230, 230);
+    line-height: 24px;
+    padding: calc($spacing / 2);
+    position: relative;
+}
+
+[tb] tr.fix-border-top th, [tb] tr.fix-border-top td {
+    border-bottom: none;
+}
+
+[tb] tr.fix-border-top th span.fix-border-top, [tb] tr.fix-border-top td span.fix-border-top {
+    background-color: rgb(23, 140, 194);
+    bottom: -1px;
+    height: 1px;
+    left: -1px;
+    position: absolute;
+    width: 105%;
+}
+
+[tb] tr.fix-border-top th:last-child span.fix-border-top, [tb] tr.fix-border-top td:last-child span.fix-border-top {
+    left: auto;
+    right: -1px;
+}

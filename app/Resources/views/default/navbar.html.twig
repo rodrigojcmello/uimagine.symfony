@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ asset('css/dist/navbar.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/dist/icon.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/dist/grid.min.css') }}" />
+{% endblock %}
+
+{% block body %}
+    <div class="navbar {{ light }}">
+        {% block navbar_type %}{% endblock %}
+    </div>
+    <div class="container content">
+        <div class="row">
+            <div class="col">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum pretium malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget lorem nec enim varius suscipit. Maecenas facilisis pulvinar lorem, sed eleifend est ultricies id. Nam auctor ex at libero mattis, ac volutpat tortor fringilla. Sed gravida placerat nisl eget congue. Vestibulum in sollicitudin sem. Fusce sed urna eget sem euismod condimentum. Aliquam erat volutpat.
+                </p>
+                <div class="row">
+                    <div class="col xs-6">
+                        <p>
+                            Aenean luctus tellus sed massa placerat, nec congue arcu convallis. Morbi nec semper eros, id tempor ipsum. Mauris at arcu feugiat, fermentum risus condimentum, euismod massa. Suspendisse id velit sed odio vulputate efficitur. Pellentesque blandit tristique dui, vitae ullamcorper enim ornare eu. Sed sit amet bibendum justo. Proin sem nisl, blandit vitae leo vel, mattis placerat metus.
+                        </p>
+                    </div>
+                    <div class="col xs-6">
+                        <p>
+                            Quisque blandit risus eleifend tincidunt blandit. Pellentesque eleifend est vitae mi ullamcorper eleifend. Nullam congue, ex sit amet bibendum vulputate, arcu nunc viverra orci, eu tempus est magna non orci. Morbi luctus, magna quis interdum cursus, ante lectus aliquam mauris, ut sagittis tortor enim sed leo. Phasellus ut vulputate leo, vel congue arcu. Curabitur vitae pulvinar ante.
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    Vestibulum ac interdum nunc, sed bibendum felis. Pellentesque vitae erat nulla. Vestibulum imperdiet sed arcu non efficitur. Phasellus vitae consequat leo. Maecenas nec scelerisque risus. Ut in sollicitudin orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique lectus vitae posuere fermentum. Morbi tempus a augue id vestibulum. Curabitur accumsan lacus quis nisi congue blandit.
+                </p>
+                <p>
+                    Fusce tempor magna sed enim accumsan, a euismod elit ullamcorper. In tortor felis, gravida ut viverra eu, mollis non libero. Proin ac dignissim mi. In maximus vulputate blandit. Quisque fermentum, augue at congue placerat, arcu purus mattis felis, quis facilisis sapien neque ac sapien. Proin eu nulla lorem. Sed vel mi luctus, tempor mi et, interdum neque. Donec eu nulla bibendum mi euismod pharetra a sit amet purus. Integer vel nulla euismod, varius elit at, efficitur ipsum. Aenean hendrerit, metus eget dignissim rutrum, elit magna aliquet orci, vitae pretium elit justo id nunc. Praesent eu ligula lobortis leo convallis sagittis eu non lectus. Nulla cursus imperdiet mollis. Proin rhoncus velit in est dapibus vulputate. Maecenas eu felis dolor. Integer mattis vel purus id tincidunt.
+                </p>
+                <p>
+                    Fusce eu massa eget tellus posuere fringilla non nec mauris. Duis at convallis augue. Fusce eget mauris et velit finibus aliquam ultrices at eros. Fusce ullamcorper auctor nulla. Etiam lorem ligula, venenatis sit amet porttitor ut, tempus in nisl. Quisque malesuada nisl at felis dictum, quis tempor ligula egestas. Duis ut velit faucibus, egestas quam quis, volutpat urna. Suspendisse finibus posuere mauris et dictum. Aliquam egestas eleifend vehicula. Quisque vel ullamcorper tortor. Suspendisse nec massa pharetra velit porta posuere.
+                </p>
+                <p>
+                    Integer ut velit at nisl finibus luctus. Sed non felis semper, aliquet ligula sit amet, maximus ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque eleifend velit sed fermentum sodales. Duis justo justo, feugiat nec venenatis nec, tincidunt vel nunc. Aliquam ligula dui, condimentum nec ultrices ut, posuere quis neque. Suspendisse a libero ullamcorper, vulputate metus tempus, mollis ante. Nulla non lorem rutrum nisi tempus consequat non vel dolor. Maecenas quis felis risus. Nam vel nunc diam. Mauris rhoncus efficitur viverra. Proin eu feugiat nisl. Ut tristique tellus semper porta tincidunt. Proin sagittis eget justo sit amet vehicula. Nullam vel vulputate tellus. Quisque semper ultricies dolor, ut pretium ligula pharetra nec.
+                </p>
+                <p>
+                    Quisque vel nunc semper, viverra dui non, suscipit enim. Duis ornare varius tincidunt. Suspendisse potenti. Morbi non est suscipit, efficitur nisl ac, sagittis lectus. Nulla finibus nunc ut est mattis interdum. Quisque gravida ac libero eget venenatis. Fusce malesuada eros sapien, sit amet ultricies nisl interdum ac.
+                </p>
+                <p>
+                    Donec blandit eget lorem sit amet varius. Vivamus nec ligula et elit volutpat feugiat. Mauris et purus sit amet elit tempus faucibus at in libero. Aliquam bibendum sed dui vel faucibus. Suspendisse ut ligula vitae sapien malesuada dapibus in id sapien. Proin sit amet hendrerit neque. Curabitur ut nisi et justo lobortis molestie vitae at orci. Nam quis tristique est, convallis elementum ante.
+                </p>
+                <p>
+                    Nulla sit amet consectetur turpis, scelerisque varius leo. Vivamus lorem justo, fringilla non diam eget, sollicitudin vestibulum nunc. Praesent condimentum imperdiet ipsum, quis hendrerit arcu porttitor ut. Praesent vehicula, dolor nec tempor dignissim, dolor purus tincidunt neque, quis iaculis urna ex vitae est. Sed et tellus velit. In vitae sodales sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam at vehicula turpis. Aenean egestas mattis dui eu tincidunt. In scelerisque venenatis luctus.
+                </p>
+                <p>
+                    Integer eget ipsum tempus, hendrerit sem eget, ornare libero. Aliquam aliquet ante sit amet euismod efficitur. Praesent volutpat fringilla augue non commodo. Aliquam viverra vehicula ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc et ultrices metus, consectetur laoreet felis. Proin non arcu nulla. Integer et sagittis nunc.
+                </p>
+            </di>
+        </div>
+    </div>
+{% endblock %}
