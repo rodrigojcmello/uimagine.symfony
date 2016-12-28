@@ -6,19 +6,49 @@
         <title>{{ title }}</title>
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
         <!-- <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' /> -->
-        <link rel="stylesheet" href="{{ asset('uimagine.design/bower_components/Ionicons/css/ionicons.min.css') }}" />
-        <link rel="stylesheet" href="{{ asset('uimagine.design/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css') }}" />
+        <!-- <link rel="stylesheet" href="{{ asset('uimagine.design/bower_components/Ionicons/css/ionicons.min.css') }}" /> -->
+        <!-- <link rel="stylesheet" href="{{ asset('uimagine.design/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css') }}" /> -->
 
         <!-- Material Icons ################################################ -->
-
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
-        <link rel="stylesheet" href="{{ asset('css/dist/default.min.css') }}" />
+        <!-- Font Awesome ################################################## -->
+        <link rel="stylesheet" href="{{ asset('bower_components/font-awesome/css/font-awesome.min.css') }}" />
+
+        <!-- UImagine Design ############################################### -->
+        <link rel="stylesheet" href="{{ asset('uimagine.design/css/dist/essential.css') }}" />
+        <link rel="stylesheet" href="{{ asset('uimagine.design/css/dist/grid.css') }}" />
+        <link rel="stylesheet" href="{{ asset('uimagine.design/css/dist/navbar.css') }}" />
+        <link rel="stylesheet" href="{{ asset('uimagine.design/css/dist/sidebar.css') }}" />
+
+        <!-- Custom CSS -->
         {% block css %}{% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
-        <!-- <script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
-        <script src="{{ asset('js/main.js') }}"></script> -->
+        <nav class="side_ bar">
+            <div class="container md">
+                <a href="#" class="logo"><img src="{{ asset('img/google-logo-branco.png') }}" /></a>
+                <button id="btn-menu"><i class="material-icons">menu</i></a></button>
+                <ul>
+                    <!-- <li class="active"><a href="#"><i class="material-icons">home</i></a></li> -->
+                    <li><a href="#"><i class="material-icons with-text">home</i>Início</a></li>
+                    <li><a href="#"><i class="material-icons with-text">timer</i>Instalação</a></li>
+                    <li><a href="#"><i class="material-icons with-text">view_compact</i>Smart Grid</a></li>
+                    <li><a href="#"><i class="material-icons with-text">keyboard</i>Formulário</a></li>
+                    <!-- <li class="active_"><a href="#"><i class="material-icons with-text">navigation</i>Navegação</a></li> -->
+                    <!-- <li><a href="#"><i class="material-icons with-text">view_list</i>Tabela</a></li> -->
+                    <!-- <li><a href="#"><i class="material-icons with-text">brightness_4</i>Item6 Item6 Item6 Item6 Item6 Item6</a></li> -->
+                    <!-- <li><a href="#">Item6 Item6 Item6 Item6 Item6 Item6</a></li> -->
+                    <!-- <li><a href="#">Item7</a></li> -->
+                    <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
+                    <li><a href="#"><i class="material-icons">mail_outline</i></a></li>
+                    <li><a href="#"><i class="material-icons">phone</i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container content">
+            {% block body %}{% endblock %}
+        </div>
+        <script src="{{ asset('uimagine.design/js/main.js') }}"></script>
     </body>
 </html>
