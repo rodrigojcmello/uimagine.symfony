@@ -16,18 +16,18 @@
         <link rel="stylesheet" href="{{ asset('bower_components/font-awesome/css/font-awesome.min.css') }}" />
 
         <!-- UImagine Design ############################################### -->
-        <link rel="stylesheet" href="{{ asset('uimagine.design/css/dist/essential.css') }}" />
-        <link rel="stylesheet" href="{{ asset('uimagine.design/css/dist/grid.css') }}" />
-        <link rel="stylesheet" href="{{ asset('uimagine.design/css/dist/navbar.css') }}" />
-        <link rel="stylesheet" href="{{ asset('uimagine.design/css/dist/sidebar.css') }}" />
+        <link rel="stylesheet" href="{{ asset('uimagine.design/css/dist/uimagine.css') }}" />
 
         <!-- Custom CSS -->
         {% block css %}{% endblock %}
     </head>
     <body>
-        <nav class="side bar">
+        <nav class="side_ bar">
             <div class="container md">
-                <a href="#" class="logo"><img src="{{ asset('img/google-logo-branco.png') }}" /></a>
+                <a href="#" class="logo">
+                    <span class="helper"></span>
+                    <img src="{{ asset('img/google-logo-branco.png') }}" />
+                </a>
                 <button id="btn-menu"><i class="material-icons">menu</i></a></button>
                 <ul class="menu">
                     <li class="active"><a href="#"><i class="material-icons with-text">home</i>Início</a></li>
@@ -36,7 +36,7 @@
                     <li><a href="#"><i class="material-icons with-text">keyboard</i>Formulário</a></li>
                     <!-- <li class="active_"><a href="#"><i class="material-icons with-text">navigation</i>Navegação</a></li> -->
                     <!-- <li><a href="#"><i class="material-icons with-text">view_list</i>Tabela</a></li> -->
-                    <li><a href="#"><i class="material-icons with-text">brightness_4</i>Item6 Item6 Item6 Item6 Item6 Item6</a></li>
+                    <!-- <li><a href="#"><i class="material-icons with-text">brightness_4</i>Item6 Item6Item6Item6Item6 Item6</a></li> -->
                     <!-- <li><a href="#">Item6 Item6 Item6 Item6 Item6 Item6</a></li> -->
                     <!-- <li><a href="#">Item7</a></li> -->
                     <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
