@@ -22,29 +22,41 @@
         {% block css %}{% endblock %}
     </head>
     <body>
-        <nav class="side bar">
+        <nav class="side_ bar alt_ container_ sm">
             <div class="container sm">
                 <a href="#" class="logo">
-                    <span class="helper"></span>
                     <img src="{{ asset('img/google-logo.png') }}" />
-                    <!-- <img src="{{ asset('img/microsoft-logo.png') }}" /> -->
-                    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_(2012).svg/1000px-Microsoft_logo_(2012).svg.png" /> -->
                 </a>
-                <button id="btn-menu"><i class="material-icons">menu</i></a></button>
-                <ul class="menu">
-                    <li class="active"><a href="#"><i class="material-icons with-text">home</i>Início</a></li>
-                    <li><a href="#"><i class="material-icons with-text">timer</i>Instalação</a></li>
-                    <li><a href="#"><i class="material-icons with-text">view_compact</i>Smart Grid</a></li>
-                    <li><a href="#"><i class="material-icons with-text">keyboard</i>Formulário</a></li>
-                    <!-- <li class="active_"><a href="#"><i class="material-icons with-text">navigation</i>Navegação</a></li> -->
-                    <!-- <li><a href="#"><i class="material-icons with-text">view_list</i>Tabela</a></li> -->
-                    <!-- <li><a href="#"><i class="material-icons with-text">brightness_4</i>Item6 Item6Item6Item6Item6 Item6</a></li> -->
-                    <!-- <li><a href="#">Item6 Item6 Item6 Item6 Item6 Item6</a></li> -->
-                    <li><a href="#">Recebimento</a></li>
-                    <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
-                    <li><a href="#"><i class="material-icons">mail_outline</i></a></li>
-                    <li><a href="#"><i class="material-icons">phone</i></a></li>
-                </ul>
+                <div class="topbar">
+                    <ul class="left">
+                        <li><a href="#" id="toogle-menu"><i class="material-icons">menu</i></a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="#"><i class="material-icons">save</i></a></li>
+                        <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul class="left">
+                        <li class="active"><a href="#"><i class="material-icons">home</i></a></li>
+                        <li><a href="#"><i class="material-icons with-text">timer</i>Instalação</a></li>
+                        <li><a href="#"><i class="material-icons with-text">view_compact</i>Smart Grid</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li class="dropdown">
+                            <a href="#"><i class="material-icons with-text">keyboard</i>Formulário</a>
+                            <ul>
+                                <li><a href="#"><i class="material-icons with-text">keyboard</i>Formulário</a></li>
+                                <li><a href="#"><i class="material-icons with-text">keyboard</i>Formulário</a></li>
+                                <li><a href="#"><i class="material-icons with-text">keyboard</i>Formulário</a></li>
+                                <li><a href="#"><i class="material-icons with-text">keyboard</i>Formulário</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="#">RecebimentoRecebimento</a></li> -->
+                        <li><a href="#"><i class="material-icons">mail_outline</i></a></li>
+                        <li><a href="#"><i class="material-icons">phone</i></a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <div class="container sm content">
