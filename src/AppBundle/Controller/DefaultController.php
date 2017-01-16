@@ -16,6 +16,16 @@ class DefaultController extends Controller
         $a['title'] = 'Grid UImagine';
         return $this->render('default/grid.html.twig', $a);
     }
+
+    /**
+     * @Route("/table", name="table")
+     */
+    public function tableAction(Request $request)
+    {
+        $a['title'] = 'Table UImagine';
+        return $this->render('default/table.html.twig', $a);
+    }
+
     /**
      * @Route("/navbar/{tipo}/{template}", name="navbar")
      */
