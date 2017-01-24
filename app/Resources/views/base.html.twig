@@ -22,13 +22,13 @@
         {% block css %}{% endblock %}
     </head>
     <body>
-        <nav class="side_ bar alt container_ sm_">
+        <nav class="side_ bar alt_ container_ sm_">
             <div class="container sm">
                 <div class="logo">
                     <a href="#">
                         <!-- <img src="{{ asset('img/google-logo.png') }}" /> -->
-                        <!-- <img src="{{ asset('img/pepsi-logo.png') }}" /> -->
-                        <img src="{{ asset('img/pepsi-logo-branco.png') }}" />
+                        <img src="{{ asset('img/pepsi-logo.png') }}" />
+                        <!-- <img src="{{ asset('img/pepsi-logo-branco.png') }}" /> -->
                         <!-- <img src="http://vignette3.wikia.nocookie.net/mario/images/6/62/Old_Nintendo_Logo.png/revision/latest?cb=20111120004310" /> -->
                     </a>
                 </div>
@@ -51,13 +51,10 @@
                         <li><a href="#"><i class="material-icons">keyboard_arrow_down</i>Modal</a></li>
                     </ul> -->
                     <ul class="right">
-                        <li class="active"><a href="#">Instalação</a></li>
                         <li><a href="#">Instalação</a></li>
+                        <li class="active"><a href="#">Instalação</a></li>
                         <li><a href="{{ path('grid') }}">Smart Grid</a></li>
                         <li><a href="{{ path('table') }}">Tabela</a></li>
-                        <li><a href="#">Modal</a></li>
-                    </ul>
-                    <!-- <ul class="right">
                         <li class="dropdown">
                             <a href="#"><i class="material-icons with-text">keyboard</i>Formulário</a>
                             <ul>
@@ -67,6 +64,22 @@
                                 <li><a href="#"><i class="material-icons with-text">keyboard</i>Formulário</a></li>
                             </ul>
                         </li>
+                        <li class="dropdown">
+                            <a href="#"><i class="material-icons with-text">keyboard</i>Teste</a>
+                            <ul>
+                                <li><a href="#">Formulário</a></li>
+                                <li><a href="#">Formulário</a></li>
+                                <li><a href="#">Formulário</a></li>
+                                <li><a href="#">Formulário</a></li>
+                                <li><a href="#">Formulário</a></li>
+                                <li><a href="#">Formulário</a></li>
+                                <li><a href="#">Formulário</a></li>
+                                <li><a href="#">Formulário</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Modal</a></li>
+                    </ul>
+                    <!-- <ul class="right">
                         <li><a href="#">RecebimentoRecebimento</a></li>
                         <li><a href="#"><i class="material-icons">attach_file</i><span class="badge">8</span></a></li>
                         <li><a href="#"><i class="material-icons">person_outline</i><span class="badge">99</span></a></li>
