@@ -12,19 +12,22 @@
         <!-- Material Icons ################################################ -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
+        <!-- Font  ################################################ -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" />
+        
         <!-- Font Awesome ################################################## -->
-        <link rel="stylesheet" href="{{ asset('bower_components/font-awesome/css/font-awesome.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset("bower_components/font-awesome/css/font-awesome.min.css") }}" />
 
         <!-- UImagine Design ############################################### -->
-        <link rel="stylesheet" href="{{ asset('uimagine.design/css/dist/uimagine.css') }}" />
+        <link rel="stylesheet" href="{{ asset("uimagine.design/css/dist/uimagine.css") }}" />
+
+        <link rel="stylesheet" href="{{ asset("css/prism.css") }}" />
 
         <!-- Custom CSS -->
         {% block css %}{% endblock %}
-        <style>
-        </style>
     </head>
     <body>
-        <nav class="side bar top_ alt container_ sm_">
+        <nav class="side bar top_ alt_ container_ sm_">
             <div class="container_ sm_">
                 <div class="logo">
                     <a href="#">
@@ -57,6 +60,15 @@
                         <li class="active"><a href="#">Instalação</a></li>
                         <li><a href="{{ path('grid') }}">Smart Grid</a></li>
                         <li><a href="{{ path('table') }}">Tabela</a></li>
+                        <li class="dropdown">
+                            <a href="#"><i class="material-icons icon with-text">title</i>Tipografia</a>
+                            <ul>
+                                <li><a href="#"><i class="material-icons with-text">keyboard</i>Título</a></li>
+                                <li><a href="#"><i class="material-icons with-text">keyboard</i>Parágrafo</a></li>
+                                <li><a href="#"><i class="material-icons with-text">keyboard</i>Tamanho</a></li>
+                                <li><a href="#"><i class="material-icons with-text">keyboard</i>Alinhamento</a></li>
+                            </ul>
+                        </li>
                         <li class="dropdown">
                             <a href="#"><i class="material-icons with-text">keyboard</i>Formulário</a>
                             <ul>
@@ -175,9 +187,10 @@
                 </div>
             </div>
         </nav>
-        <div class="container md content">
+        <div class="container md mt-sm">
             {% block body %}{% endblock %}
         </div>
         <script src="{{ asset('uimagine.design/js/main.js') }}"></script>
+        <script src="{{ asset('js/prism.js') }}"></script>
     </body>
 </html>
