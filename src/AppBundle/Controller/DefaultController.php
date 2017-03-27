@@ -36,6 +36,15 @@ class DefaultController extends Controller
     }
 
     /**
+     * @Route("/button", name="button")
+     */
+    public function buttonAction(Request $request)
+    {
+        $a['title'] = 'Typography UImagine';
+        return $this->render('default/button.html.twig', $a);
+    }
+
+    /**
      * @Route("/navbar/{tipo}/{template}", name="navbar")
      */
     public function navbarAction($tipo = null, $template = null)
